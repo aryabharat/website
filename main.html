@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAADU Project</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#myPage">Logo</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#myPage">HOME</a></li>
+	        <li><a href="#EXPLORE">EXPLORE</a></li>
+	        <li><a href="#FEEDBACK">FEEDBACK</a></li>
+	        <li><a href="#ABOUT">ABOUT</a></li>
+	        <li><a href="#Login" data-toggle="modal" data-target="#myModal" >Login</a></li>
+	      </ul>
+	    </div>
+	  </div>
+    </nav>
+
+  <!-- Modal -->
+     <div class="modal fade" id="myModal">
+	    <div class="modal-dialog modal-md">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	         <ul class="nav nav-tabs nav-justified">
+	 			 <li class="active"><a data-toggle="tab" href="#login">Login</a></li>
+	  			 <li><a data-toggle="tab" href="#signup ">Signup</a></li>
+			</ul>
+	        </div>
+	        <div class="modal-body">
+	          <div class="tab-content">
+				  <div id="login" class="tab-pane fade in active">
+				    <form class="form-horizontal" action="######">
+						 <div class="input-group">
+						    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						    <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+						  </div>
+						  <br>
+						  <div class="input-group">
+						    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+	  					</div>
+	  					<br>
+						  <div class="form-group"> 
+						    <div class="col-sm-offset-2 col-sm-10">
+						      <button type="submit" class=" btn btn-success">Submit</button>
+						    </div>
+						  </div>
+					</form>
+				  </div>
+				  <div id="signup" class="tab-pane fade">
+				    <form class="form-horizontal" action="######">
+				    		<div class="input-group">
+						   	 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						    	<input id="name" type="text" class="form-control" name="Name" placeholder="FullName" required>
+						 	</div>
+						  <br>
+						  <div class="input-group">
+						   	 <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+						    	<input id="number" type="number" class="form-control" name="number" placeholder="ContactNumber" required>
+						 	</div>
+						  <br>
+						  <div class="input-group">
+						   	 <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+						    	<input id="DOB" type="date" class="form-control" name="DOB" placeholder="FullName" required>
+						 	</div>
+						  <br>
+						   <div class="input-group">
+						    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						    <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+						  </div>
+						  <br>
+						  <div class="input-group">
+						    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+	  					</div>
+	  					<br>
+						  <div class="form-group"> 
+						    <div class="col-sm-offset-2 col-sm-10 ">
+						      <button type="submit" class="btn btn-success">Submit</button>
+						    </div>
+						  </div>
+					</form>
+				  </div>
+	        </div>
+	         <!-- If need to add sign up otion with Facebook or Google add model footer here-->
+	      </div>
+	      </div>
+        </div>
+    </div>
+    
+<div class="jumbotron text-center" style="padding-top:150px;">
+  <h1>Jaddu Projct</h1>  
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="test" class="form-control" size="50" placeholder="Search" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Search</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div id="EXPLORE" class="container-fluid text-center">
+	 <h1 style="font-size: 70px;">Explore</h1>
+<div class="row">
+    <a><div class="col-sm-4">
+      <div class="card bg-primary " >
+      		<div class="card-body">Machine Learning</div>
+      </div>
+    </div></a>
+    <a><div class="col-sm-4"> 
+   		 <div class="card bg-primary ">
+			  <div class="card-body">
+			    Big Data
+			  </div>
+		</div>
+    </div></a>
+    <a><div class="col-sm-4">
+	    <div class="card bg-primary  ">
+		  	<div class="card-body">
+		    	Website Development
+		  	</div>
+		</div>
+    </div></a>
+  </div>
+  <br>
+  <div class="row slideanim">
+    <a><div class="col-sm-4">
+      <div class="card bg-primary  ">
+      		<div class="card-body">Android Development</div>
+      </div>
+    </div></a>
+    <a><div class="col-sm-4"> 
+   		 <div class="card bg-primary  ">
+			  <div class="card-body">
+			    Cloud
+			  </div>
+		</div>
+    </div></a>
+    <a><div class="col-sm-4">
+	    <div class="card bg-primary  ">
+		  	<div class="card-body">
+		    	Open Source
+		  	</div>
+		</div>
+    </div></a>
+  </div>
+</div>
+
+<div id="FEEDBACK" class="container-fluid text-center">
+	<h1 style="font-size: 70px;">Feedback</h1>
+      <div class="row">
+      	<div class="col-sm-3 form-group">
+            <img id="feed" src="img/feed.png">
+        </div>
+        <div class="col-sm-9 form-group">
+        	<div class="row">
+        		<form>
+			        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea><br>
+			        <input type="submit" class="btn btn-danger">
+			    </form>
+		    </div>
+        </div>
+     </div>
+<div id="ABOUT" class="container-fluid">
+	<h1>About</h1>
+</div>
+</body>
+</html>
