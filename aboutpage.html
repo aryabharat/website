@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OZIMNE</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 510px; /* Should be removed. Only for demonstration */
+}
+
+#desc{
+	box-shadow: 10px 10px 5px grey;
+	margin-top:25px;
+	background-color: #5cd6d6;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 10px; 
+}
+
+#desc2{
+	
+	column-span: 12
+	margin-top:25px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px; 
+}
+
+mark {
+    background-color: #5cd6d6;
+}
+
+.overlay {
+	box-shadow: 10px 10px 5px grey;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #5cd6d6;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlayl {
+	box-shadow: 10px 10px 5px grey;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5cd6d6;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.col-sm-4:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.col-sm-4:hover .overlayl {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1 align="center">WHY US?</h1>
+		<div class="row">
+			<div style="margin-top: 20px; margin-right: 20px; margin-bottom: 20px; box-shadow: 10px 10px 5px grey;">
+				<img src="DESC.png" class="img-rounded" alt="Cinque Terre" height="600px;" width=" 1180px;" style="vertical-align:middle" >
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h3 style="margin-top: 50px;">The JOURNEY</h3>
+				<div class="img-rounded" id="desc">
+					<p>Our story is the exact replica of the <mark style="font-size: 25px;"> SIX ZEROS</mark><br>Wait, WHAT?<BR>The college boys who want to do something for the society, for the youth but they can't because they are unaware of world.<BR>Yes, we began it with nothing in our hands. We saw the dream, each day and night, to stand on our feet. We felt like giving up, but the spark in our hearts to bring the future didn't let us stop.<br>
+So, we <mark style="font-size: 23px;">learnt & grew;</mark> <mark style="font-size: 27px;">bigger,</mark> <mark style="font-size: 31px;">better,</mark> <mark style="font-size: 35px;">tougher</mark> <b>to bring this society a change!</b><br>Although we haven't achieved what we want to and we will continue to crush the stones and keep achieving the milestones.<br>
+This is just the <mark style="font-size: 23px;">BEGINNING.</mark><br>
+<mark style="font-size: 27px;">BEGINNING OF THE ERA OF SIX ZEROS</mark></p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="logox.jpg" class="img-rounded" alt="Cinque Terre" width="500" height="500" align="middle">
+			</div>
+		</div>
+		<div style="margin-top: 65px;">
+			<h3>THE STORY BEHIND</h3>
+			<blockquote  style="padding-left: 40px;" class="img-rounded" id="desc">One night before going to bed, I wanted to learn android so I dived into the bottomless internet for what should I choose but couldn't. 
+I ended up buying a course, from a reputed website and paid hefty money.
+It was 3 days letter my friend told me about another android course he was pursuing which was both better and friendly to pocket.
+I then realized how it felt. I regretted spending money and I know the cost of every penny( everyone has a bad time).
+It was a perfect example of mess.
+So, I thought that we could do something for the programmers of the country. <br>
+
+So we discussed & argued, and we continued refining the idea to come up with what we have today.
+<footer>From ASTITVA</footer></blockquote>
+		</div>
+		<div class="row">
+			<div style="margin-top: 40px;">
+				<h3>THE TEAM</h3>
+				<div class="col-sm-8" id="desc2">
+					<h4>ASTITVA GUPTA</h4>
+					<p> "My dreams are beyond the sky & I'm never gonna stop!". Beginning his journey from a little city Amroha, to being an entrepreneur, the founder of this website has come a long way ahead. He loves to write and is a tech enthusiast. He wants to make this world a better place and grow to be the best in his field.  </p>
+				</div>
+				<div class="col-sm-4" style="margin-bottom: 10px;">
+					<img src="asr.jpg" class="img-responsive img-rounded" alt="Cinque Terre" width="150" height="150">
+					<div class="overlay">
+    <div class="text">ASTITVA GUPTA</div>
+  </div>
+				</div>
+				
+				<div class="col-sm-4" style="padding-left: 175px" >
+					<img src="am.jpeg" class="img-responsive img-rounded" alt="Cinque Terre" width="150" height="150">
+					<div class="overlayl">
+    <div class="text">AMIT MISHRA</div>
+  </div>
+				</div>
+				<div class="col-sm-8" id="desc2">
+					<h4>AMIT MISHRA</h4>
+					<p>A mere mortal born and raised in jaipur city making his way in this world through constant hard work.A tech enthusiast who likes to play around with new technology.He quotes, “Amit Mishra, the name may not sound familiar now but one day you will be reading about me on Wikipedia.” </p>
+				</div>
+
+				<div class="col-sm-8" id="desc2">
+					<h4>BHARAT ARYA</h4>
+					<p>Bharat Arya, a spirited personality, loves whatever he does and is always hungry for new thoughts and projects. He likes to discover the new challenges around. He has keen interest in sports, drama & standups. He relishes his life to the fullest and runs with simple rule "work smart and party hard".
+ </p>
+				</div>
+				<div class="col-sm-4" style="margin-bottom: 10px;">
+					<img src="bharat.jpg" class="img-responsive img-rounded" alt="Cinque Terre" width="150" height="150">
+					<div class="overlay">
+    <div class="text">BHARAT ARYA</div>
+  </div>
+				</div>
+
+				<div class="col-sm-4" style="padding-left: 175px">
+					<img src="kayu.jpg" class="img-responsive img-rounded" alt="Cinque Terre" width="150" height="150">
+					<div class="overlayl">
+    <div class="text">KARTIK SINGH</div>
+  </div>
+				</div>
+				<div class="col-sm-8" id="desc2">
+					<h4>KARTIK SINGH</h4>
+					<p>Kartik, the man who wants to create dent with AI and blockchain in this world, is from Allahbad. He works pretty hard and submits whatever he has to turn the things to his side. Highly motivated, from the legend Elon Musk, Kartik believes to move ahead in life learning from failures. </p>
+				</div>
+
+				<div class="col-sm-8" id="desc2">
+					<h4>ABHISHEK MENON</h4>
+					<p>The man comes from Amroha, driving the sheets under the cover and letting all lights shine from the hollow darkness. ience. By using visuals and multimedia, Bench is able to create an effective "About Us" page that shows who they are and what they do instead of simply stating it to audiences through dull copy. </p>
+				</div>
+				<div class="col-sm-4" style="margin-bottom: 10px;">
+					<img src="abhi.jpg" class="img-responsive img-rounded" alt="Cinque Terre" width="150" height="150">
+					<div class="overlay">
+    <div class="text">ABHISHEK MENON</div>
+  </div>
+				</div>
+
+				<div class="col-sm-4" style="padding-left: 175px">
+					<img src="maneesh.jpg" class="img-responsive img-rounded" alt="Cinque Terre" width="150" height="150">
+					<div class="overlayl">
+    <div class="text">MANISH JAISWAL</div>
+  </div>
+				</div>
+				<div class="col-sm-8" id="desc2">
+					<h4>MANISH JAISWAL</h4>
+					<p>“Manish, a person carrying heart of a warrior and composure of a saint.” Hailing from Ranchi, this budding is also an emerging entrepreneur having deep interest in socio-political issues. He loves being motivational and an orator who can make the audience dance to his tunes apart from being an amateur soulful writer. </p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
