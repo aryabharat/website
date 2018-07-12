@@ -40,7 +40,7 @@
 	        <div class="modal-body">
 	          <div class="tab-content">
 				  <div id="login" class="tab-pane fade in active">                                                                  <!-- Sign in form -->
-				    <form class="form-horizontal" action="######">
+				    <form class="form-horizontal" method="POST" action="action.php">
 						 <div class="input-group">
 						    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 						    <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
@@ -53,13 +53,13 @@
 	  					<br>
 						  <div class="form-group">
 						    <div class="col-sm-offset-2 col-sm-10">
-						      <button type="submit" class=" btn btn-success">Submit</button>
+						      <button type="submit" name="login" class=" btn btn-success">Submit</button>
 						    </div>
 						  </div>
 					</form>
 				  </div>
 				  <div id="signup" class="tab-pane fade">
-				    <form class="form-horizontal" action="######">                                                                  <!-- sign up form --> 
+				    <form class="form-horizontal" action="action.php" method="POST">                                                                  <!-- sign up form -->
 				    		<div class="input-group">
 						   	 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 						    	<input id="name" type="text" class="form-control" name="Name" placeholder="FullName" required>
@@ -87,7 +87,7 @@
 	  					<br>
 						  <div class="form-group">
 						    <div class="col-sm-offset-2 col-sm-10 ">
-						      <button type="submit" class="btn btn-success">Submit</button>
+						      <button type="submit" name="register" class="btn btn-success">Submit</button>
 						    </div>
 						  </div>
 					</form>
