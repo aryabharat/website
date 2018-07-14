@@ -1,5 +1,4 @@
 <?php
-	require db.php;
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -26,10 +25,10 @@
 	        <li><a href="#FEEDBACK">FEEDBACK</a></li>
 	        <li><a href="#ABOUT">ABOUT</a></li>
 					<?php
-						if( isset($_SESSION['message']) AND !empty($_SESSION['message']))
-							echo "<li><a href="#Login" data-toggle="modal" data-target="#myModal" >Login</a></li>"
+						if( isset($_SESSION['Name']) AND !empty($_SESSION['Name']))
+							echo '<li><a href="profile.php" >PROFILE</a></li>';
 						else
-								echo "<li><a href="#Login" data-toggle="modal" data-target="#myModal" >Profile</a></li>"
+								echo '<li><a href="#Login" data-toggle="modal" data-target="#myModal" >LOGIN</a></li>';
 					?>
 
 	      </ul>
@@ -43,8 +42,8 @@
 	      <div class="modal-content">
 	        <div class="modal-header">
 	         <ul class="nav nav-tabs nav-justified">
-	 			 <li class="active"><a data-toggle="tab" href="#login">Login</a></li>
-	  			 <li><a data-toggle="tab" href="#signup ">Signup</a></li>
+	 			 <li class="active"><a data-toggle="tab" href="#login">LOGIN</a></li>
+	  			 <li><a data-toggle="tab" href="#signup ">SIGNUP</a></li>
 			</ul>
 	        </div>
 	        <div class="modal-body">
@@ -58,7 +57,7 @@
 						  <br>
 						  <div class="input-group">
 						    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-						    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+						    <input id="password"  type="password" class="form-control" name="password" placeholder="Password" required>
 	  					</div>
 	  					<br>
 						  <div class="form-group">
@@ -92,7 +91,7 @@
 						  <br>
 						  <div class="input-group">
 						    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-						    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+						    <input id="password" pattern=".{8,}" required title="8 chars minimum" type="password" class="form-control" name="password" placeholder="Password" required>
 	  					</div>
 	  					<br>
 						  <div class="form-group">
