@@ -128,14 +128,14 @@
       <div class="card bg-primary " >
       		<div class="card-body">Machine Learning</div>
       </div>
-    </div></a>
+    </div>
+	  </a>
     <a><div class="col-sm-4">
-   		 <div class="card bg-primary ">
-			  <div class="card-body">
-			    Big Data
-			  </div>
-		</div>
-    </div></a>
+   		  <div class="card bg-primary ">
+			   	<div class="card-body">Big Data</div>
+		   	</div>
+      	</div>
+		</a>
     <a><div class="col-sm-4">
 	    <div class="card bg-primary  ">
 		  	<div class="card-body">

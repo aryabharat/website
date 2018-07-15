@@ -17,10 +17,10 @@
             {
               $_SESSION['Name'] = $user['Name'];
               $_SESSION['email'] = $_POST['email'];
-              $_SESSION['contact'] = $_POST['contact'];
-              $_SESSION['DOB'] = $_POST['DOB'];
+              $_SESSION['contact'] = $user['contact'];
+              $_SESSION['DOB'] = $user['DOB'];
               $_SESSION['message'] = "Logged in sucessfully";
-              header("location: main.php");
+              header("location: index.php");
             }
 
         else

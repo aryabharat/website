@@ -26,8 +26,7 @@
             $_SESSION['Name'] = $_POST['Name'];
             $_SESSION['contact'] = $_POST['contact'];
             $_SESSION['DOB'] = $_POST['DOB'];
-            $_SESSION['password'] = $_POST['password'];
-            echo $_SESSION['message'];
+           header("location: index.php");
         }
 
         else
