@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EIISDG 2019</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 35px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 10px;
+      width: 100%;
+    text-align:center;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 0px;
+  }
+  .jumbotron {
+    background: url('1.jpg') no-repeat;
+     background-size: 1900px 800px;
+     background-position: 0px -200px;
+    background-position: ;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .menu {
+      display: none;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+
+  .navbar-fixed-top {
+    min-height: 65px;
+}
+  .navbar {
+      margin-bottom: 0;
+      background-color: #3895D3	;
+      z-index: 9999;
+      border: 0;
+      font-size: 15px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  li{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  p{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  table{
+    border: 0;
+    color: white;
+  }
+  td{
+
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1F2833;
+  }
+  .w3-container{
+    background: url('af.jpg') no-repeat;
+    background-position: center;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+    sup{
+      font-size: 10px;
+    }
+    h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 42px;
+    margin: 0 0 23px 0;
+    }
+
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage"><img class="img-responsive" src="image001.png" style="height:50px;" alt="UPES"></a>
+      <a class="navbar-brand" href="#myPage"><img class="img-responsive" src="asu.png" style="height:40px;  padding-left: 20px;" alt="UPES"></a>
+      <a class="navbar-brand" href="#myPage"><img class="img-responsive"src="ipe.png" style="height:50px;  padding-left: 20px;" alt="UPES"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#OBJECTIVES">OBJECTIVES</a></li>
+        <li><a href="#THEMES">THEMES</a></li>
+        <li><a href="#FORMAT">FORMAT</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+<br>
+  <h1 style="color:white; font-size: 50px; font-family:'Alegreya';"><strong>Energy Innovations Initiatives for Attaining Sustainable Development Goals</strong></h1>
+  <br>
+  <h2  style="color:white;" >2<sup style="text-transform: lowercase;">nd</sup> INTERNATIONAL CONFERENCE WORKSHOP</h2>
+  <br>
+  <h3><br>13<sup>th</sup> to 15<sup>th</sup> February 2019</h3>
+</div>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+        <article>
+          <h2>ABOUT</h2>
+            <p>The 4th “Sustainable Energy for All” forums held in May 2018 at Lisbon, Portugal concluded that the energy systems imaginations requires a significant shift.</p>
+
+            <p> “…the sustainable energy systems of the future are no longer just about electrons, but about energy as a set of services that deliver prosperity, reliable health care, education and business opportunities. We understand now that the energy systems of the future are so fundamentally different from the energy systems of the past that they require a re-imagining of the institutions, business models, financing and partnerships necessary to deliver SDG7 on the timeline laid out.” </p>
+
+            <p>The inaugural “Eradicating Poverty through Energy Innovation” (EPEI) workshop held at Arizona State University in February 2018, arrived at similar conclusions, proposing that energy thriving should be the broader goal of achieving SDG7 i.e. Clean and Affordable Energy for All. Deliberating around the concept of Social Value of Energy; innovation in socio-technical-financial arrangements as well as governance and ownership of energy access projects were explored by a global cohort of participants.  The contextual factors of geography, climatic conditions, economy, institutional strengths or weaknesses and culture etc. emerged as crucial factors for achieving desired outcomes. Social justice, equitable distribution of benefits, and inclusive development emerged as strongly interlinked issues.</p>
+
+            <p>To continue the sharing and dissemination of the concept of social value of energy various workshops around the world have been envisioned. These workshops will explore contextual themes and challenges in creating meaningful projects and programs for energy sufficiency, while generating social value for local communities which will lead to energy thriving.The<strong> University of Petroleum and Energy Studies </strong>, located in Dehradun, Uttarakhand a Northern state of India, in association with<strong> Arizona State University</strong>, USA and<strong> IPE Global </strong>is hosting this conference workshop. This conference is focused to attempt to meet SDGs through energy intervention and the expected outcomes prove to be good drivers for underdeveloped and developing countries.</p>
+        </article>
+    </div>
+    <div class="col-sm-4">
+        <h2 style="font-family: "Lobster", serif;">Our Speakers<h2>
+        <img class="img-responsive" src="spk.png" alt="Snow" style="width:500px; height:400px;">
+    </div>
+  </div>
+</div>
+
+<div id="OBJECTIVES" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class=" img-responsive slideanim" src="ca.jpg" alt="UPES" height="500" width="550">
+    </div>
+    <div class="col-sm-8">
+      <h2>Objectives and Expected Outcomes</h2>
+      <article>
+          <p>Innovative energy initiatives are being planned and implemented all the time, but one can always find a disconnect between well intended plans/policies and effective implementation. The primary motivation of this workshop is to bridge this gap by bringing together the participants from various domains of policy, implementation, research and practice around energy systems.</p>
+
+          <p>
+              Participants in the workshop will deliberate on three major objectives:
+          </p>
+          <ol>
+              <li>
+                  To asses existing projects/programs on basis of how they use energy as enabler to attain SDGs (issues of equality, justice, climate adaptation, poverty alleviation etc.).
+              </li>
+              <li>
+                  To deliberate on potential initiative (s) that are currently in the conceptual phase or in relatively early planning phases, to identify and incorporate social value of energy parameters in their strategic plans.
+              </li>
+              <li>
+                  To share best practices as well as failures, from around the world in energy initiatives undertaken, with focus on South and South East Asia.
+              </li>
+
+          </ol>
+          <p>Expected outcomes:</p>
+          <ol>
+              <li>
+                  Position papers representing the collective knowledge of the group on the thematic areas are expected to materialize and release them at appropriate platforms after the workshop, ensuring communication to a wider audience.
+              </li>
+              <li>
+                  A multi-disciplinary, global think tank is expected to be emerged from this conference workshop that continues to collaborate through follow-up events, intellectual exchanges and joint projects.
+              </li>
+              <li>
+                  Ideas for future workshops, joint proposals shall be invited from current participants and interested stake holders
+              </li>
+          </ol>
+
+
+      </article>
+
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="THEMES" class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Themes and Driving Questions</h2>
+      <article>
+          <p>
+              The United Nations’ Sustainable Development Goals aim to steer global initiatives towards eradicating poverty, protecting the planet and ensuring prosperity for everyone. Energy innovations are fundamental to achieve a majority of these goals. However, technological focus in energy access alone is inadequate to address what is essentially a complex socio-technical challenge of sustainable energy futures. Deeply embedded political-economic structures and associated variabilities with gender, ethnicity, language and geography make the process of attaining SDGs highly subjective and uncertain.
+          </p>
+          <p>
+              This conference workshop is organized with the aim to rethink social values of energy, in the context of the social, ecological and technological realities of the South Asian and South East Asian region. Given the fact that a fifth of human population lives in this region and nearly 37% face poverty challenge, coupled with effects of climate change such as common and disruptive extreme weather conditions affecting energy access and usage, an adaptive energy infrastructure is critical for resilient and prosperous communities.
+          </p>
+          <p>
+              Acknowledging the urgent need for sustainable development future for South and South East Asia and to achieve meaningful progress in meeting the SDG’s, the 2nd International Conference Workshop is being organized around the theme
+          </p>
+          <h4>“Energy Innovations Initiatives for Attaining Sustainable Development Goals”</h4>
+          <p>Aligned with the broad theme are questions pertaining to:</p>
+          <ul>
+              <li>
+                  Implementing SDGs: What are the Roles and policies needed? What are the identified barriers to overcome?
+              </li>
+              <li>
+                  Designing the future: How creation of an enabling environment will contribute towards long term sustainability of energy technological interventions?
+              </li>
+              <li>
+                  Educating citizens in skills and competencies related with SDGs: Which education institutions for which societies?
+              </li>
+              <li>
+                  SDGs and social engagement: How can energy innovation be aligned with social needs to address the challenge of technology adoption among the masses?
+              </li>
+              <li>
+                  Financing energy: The different levels of governing and implementing SDGs i.e. global, national and local. What works up and to what extent?
+              </li>
+              <li>
+                  Ownership Models: What kinds of ownership models for energy innovation, contributes towards sustainable energy for all.?
+              </li>
+              <li>
+                  Regulations, policy, and legal challenges: What limits community entrepreneurship in the implementing the SDGs, and how can those limits be lifted?
+              </li>
+          </ul>
+          <br/>
+          <p>
+              The community of energy innovators and thinkers interested in these thematic areas is broad and spans across entrepreneurs, businesses, governments, academia and social groups. To facilitate constructive cross-cutting dialogue and exchange of ideas, specific questions, four sub-themes for deliberation are proposed:
+          </p>
+          <ul>
+              <li>
+                  <strong>Social value of energy innovation</strong> in attaining UN SDGs for marginalized communities in different contexts
+              </li>
+              <li>
+                  Engaging communities in <strong>imagining sustainable futures</strong> and assessing the role of energy innovation in achieving them
+              </li>
+              <li>
+                  Role of <strong>innovative grassroots energy enterprises</strong> in supporting sustainable well-being of communities
+              </li>
+              <li>
+                  <strong>Policy and governance</strong> to facilitate grassroots energy enterprises that enhance sustainable well-being and foster grassroots energy innovation
+              </li>
+          </ul>
+          <p>
+              Participants will deliberate and share ideas based on their research and experiences. Small working groups will be formed during the workshop, documenting the ideas and approaches. These will be shared and supplemented by posters, short talks, and panel discussions by experienced participants who are representatives of the diversity of knowledge systems in this arena and area.
+          </p>
+          <br/>
+      </article>
+    </div>
+    <div class="col-sm-4">
+      <img class="img-responsive slideanim" src="buble.jpg" alt="UPES" height="500" width="400">
+      <img class="img-responsive slideanim" src="CA2.jpg" alt="UPES" height="500" width="500">
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="FORMAT"class="container-fluid bg-grey" style="margin:0">
+  <div class="row">
+    <div class="col-sm-8">
+      <img class="img-responsive slideanim" src="CA1.png" alt="UPES" style="width:800px; height:300px;">
+    </div>
+    <div class="col-sm-4">
+    <h2>Who should Participate</h2>
+      <ol>
+          <li>Policy Makers</li>
+          <li>Consultants and Project Implementers</li>
+          <li>Industry</li>
+          <li>Multilateral and International Organizations</li>
+          <li>Academia and Research Institutes</li>
+          <li>Financing Agencies</li>
+          <li>Energy advocates</li>
+          <li>Non-profits/ NGOs</li>
+      </ol>
+  </div>
+</div>
+</div>
+<br><br>
+
+  <div id="FORMAT" class="carousel slide text-center" data-ride="carousel">
+
+       <h2>Workshop Conference Format</h2>
+    <article>
+        <ol>
+            <li>
+                <strong>Roundtables:</strong> During roundtable deliberations, participants will form small groups of 5 -7 members. As much as possible each group will have a mix of backgrounds and skills, with participants taking on roles of moderators, stakeholders and rapporteurs. The ideas emerging from these intensive discussions would form the bulk of the joint publications resulting from the workshop
+            </li>
+            <li>
+                <strong>Invited speakers:</strong> As a prelude to the roundtables and to provoke ideas, selected speakers will potentially spark conversations with their presentations. Based on their own experiences and the challenges they have come across; these speakers will give talks that will highlight the journey of certain projects or ideas and what could be lessons learnt.
+            </li>
+            <li>
+                <strong>Entrepreneurs panel:</strong> Another tone setting activity will be with a set of creative entrepreneurs and innovators talking about their journeys and insights, in moderated discussions. Selected participants and a facilitator will engage in a conversation to stimulate ideas for participants.
+            </li>
+            <li>
+                <strong>Facilitated discussion:</strong> In the spirit of collaborative knowledge creation, two participants will present an emerging concept and invite constructive comments. They will ask for inputs from the house on the idea/concept they have been working on, with the goal of utilizing those inputs to further enrich the proposal.
+
+            </li>
+            <li>
+                <strong>POWER talks:</strong> For fun, informal and a quick sharing of ideas seven minutes long POWER talks will be organized. As an after-dinner activity, some participants will share their innovative and impactful work in this forum. This will be a platform to spread the word, on the work done by some of our participants. The audience can vote on the most inspiring talks!
+            </li>
+            <li>
+                <strong>Poster sessions:</strong> Individual research, projects, and initiatives will find space in this event through posters, which will be displayed around the venue. This will give participants the chance to know each other’s work and have more individualized exchanges. Specific time slots for posters presentations will be allocated.
+            </li>
+            <li>
+                <strong>Show and Tell - Projects and Products:</strong> Demonstrations and displays will provide an opportunity for all participant to get a firsthand, engaged experience of impactful innovations of projects, devices, initiatives and innovations that some of the participants are engaged in around the world.
+            </li>
+            <li>
+                <strong>Networking breaks</strong> will be an opportunity to mingle with and to get to know global peers better.
+
+            </li>
+        </ol>
+    </article>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div class="container-fluid bg-grey" id="menu" >
+  <div class="w3-content" style="max-width:700px">
+    <h2>AGENDA (Tentative)</h2>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'DAY 1');" id="myLink">
+        <div class="w3-third  s6 tablink">DAY 1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'DAY 2');">
+        <div class="w3-third  s6 tablink">DAY 2</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'DAY 3');">
+        <div class="w3-third  s6 tablink">DAY 3</div>
+      </a>
+    </div>
+
+    <div id="DAY 1" class="w3-container menu w3-padding-48 w3-card" style="background-color:#98FB98;">
+      <table width="400" border="1"  align="center" cellpadding="10px">
+          <tr>
+              <td>10 am - 12 pm</td>
+              <td>Registration</td>
+          </tr>
+          <tr>
+              <td>12:00 noon</td>
+              <td>Lunch</td>
+
+          </tr>
+          <tr>
+              <td>12:30 pm</td>
+              <td>Welcome and Introductions</td>
+
+          </tr>
+          <tr>
+              <td>1:30 pm</td>
+              <td>Keynote Address</td>
+
+          </tr>
+          <tr>
+              <td>2:45 pm</td>
+              <td>Networking Break</td>
+          </tr>
+          <tr>
+              <td>3:15 pm</td>
+              <td>Social Value in Energy Innovation</td>
+          </tr>
+          <tr>
+              <td>3:30 pm</td>
+              <td>Entrepreneur’s Panel</td>
+          </tr>
+          <tr>
+              <td>4:30 pm</td>
+              <td>Roundtable Discussions: Creating Social Value</td>
+          </tr>
+          <tr>
+              <td>5:00 pm</td>
+              <td>Posters: Cutting Edge Research in Energy Innovation</td>
+          </tr>
+          <tr>
+              <td>7:00 pm</td>
+              <td>Dinner</td>
+          </tr>
+
+      </table>
+    </div>
+    <div id="DAY 2" class="w3-container menu w3-padding-48 w3-card" style="background-color:#98FB98;">
+      <table width="400" border="1"  align="center">
+          <tr>
+              <td>7:30 am</td>
+              <td>Breakfast available</td>
+          </tr>
+          <tr>
+              <td>8:30am</td>
+              <td>Engaging Communities in Energy Innovation</td>
+
+          </tr>
+          <tr>
+              <td>9:30 am</td>
+              <td>Roundtable Discussions: Engaging Communities</td>
+
+          </tr>
+          <tr>
+              <td>10:00 am</td>
+              <td>Networking Break</td>
+
+          </tr>
+          <tr>
+              <td>10:30 am</td>
+              <td>Accelerating Enterprises for Energy Innovation</td>
+          </tr>
+          <tr>
+              <td>11:30 am</td>
+              <td>Roundtable Discussions: Creating and Supporting Enterprises</td>
+          </tr>
+          <tr>
+              <td>12:00 noon</td>
+              <td>Posters: Cutting Edge Research in Energy Innovation</td>
+          </tr>
+          <tr>
+              <td>1:00 pm</td>
+              <td>Lunch</td>
+          </tr>
+          <tr>
+              <td>2:00 pm</td>
+              <td>Entrepreneur’s Panel: Enterprise Strategies</td>
+          </tr>
+          <tr>
+              <td>3:00 pm</td>
+              <td>Roundtable Discussions: Business and Ownership Models</td>
+          </tr>
+          <tr>
+              <td>3:30 pm</td>
+              <td>Networking Break</td>
+          </tr>
+          <tr>
+              <td>4:00 pm</td>
+              <td>Energy Innovation and Disaster Response:</td>
+          </tr>
+          <tr>
+              <td>5:00 pm</td>
+              <td>Show and Tell</td>
+          </tr>
+          <tr>
+              <td>7:00 pm</td>
+              <td>Dinner</td>
+          </tr>
+      </table>
+    </div>
+    <div id="DAY 3" class="w3-container menu w3-padding-48 w3-card" style="background-color:#98FB98;">
+         <table width="400" border="1"  align="center">
+            <tr>
+                <td>7:30am</td>
+                <td>Breakfast</td>
+            </tr>
+            <tr>
+                <td>8:30 am</td>
+                <td>Keynote Address (Session specially dedicated to Uttarakhand)</td>
+
+            </tr>
+            <tr>
+                <td>9:30 am</td>
+                <td>Roundtable Discussions</td>
+
+            </tr>
+            <tr>
+                <td>10:30 am</td>
+                <td>Conference Wrap-Up</td>
+
+            </tr>
+            <tr>
+                <td>12:00 noon</td>
+                <td>LUNCH AND VISIT </td>
+            </tr>
+
+
+        </table>
+      </div>
+</div>
+</div>
+ <div class="container" id="CONTACT">
+    <h2>CONTACT</h2><br>
+      <div class="row">
+         <div class="col-sm-6" >
+           <div class="card-body text-center">
+                 <p class="card-text">Mr. Ishan Aggarwal
+                     <br/>+91-7015599587<br/>
+                     iaggarwal@ddn.upes.ac.in
+                 </p>
+           </div>
+         </div>
+        <div class="col-sm-6" >
+          <div class="card-body text-center">
+              <p class="card-text">Ms. Geetanjali Raghav
+                  <br/>+91-7017155704<br/>
+                  graghav@ddn.upes.ac.in
+              </p></div>
+   </div>
+  </div>
+</div>
+
+<!-- Add Google Maps s
+<div id="googleMap" style="height:400px;width:100%;">
+
+</div>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center bg-grey">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up">UPES</span>
+  </a>
+  <br>
+  <a onclick="openInNewTab()"href="#">
+    <span style="float:right"; >Images Credits</span>
+  </a>
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+<script>
+function openInNewTab(url) {
+  var win = window.open("https://drive.google.com/open?id=1_hO5f0Sn3oNlbL7UpJOqcLM8o0mBCp_C", '');
+  win.focus();
+}
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>
